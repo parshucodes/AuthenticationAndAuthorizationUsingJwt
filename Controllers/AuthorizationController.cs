@@ -172,7 +172,7 @@ namespace jwtagain.Controllers
                 status.Message = "User creation failed";
                 return Ok(status);
             }
-
+            
             // add roles here
             // for admin registration UserRoles.Admin instead of UserRoles.Roles
             if (!await roleManager.RoleExistsAsync(UserRoles.User))
